@@ -1,0 +1,93 @@
+[
+  {
+    "name": "snow",
+    "rename": "snow1",
+    "left": 732.3,
+    "top": 1239,
+    "container":"container4_1"
+  },
+  {
+    "name": "zhenci",
+    "rename": "zhenci1",
+    "left": 1155,
+    "top": 1037
+  },
+  {
+    "name": "zhenci",
+    "rename": "zhenci2",
+    "left": 1202,
+    "top": 1060
+  },
+  {
+    "name": "zhenci",
+    "rename": "zhenci3",
+    "left": 1250,
+    "top": 1083
+  },
+  {
+    "name": "snow",
+    "rename": "snow2",
+    "left": 1094,
+    "top": 1056,
+    "container": "container4_1"
+  },{
+    "name": "nidui",
+    "rename": "nidui",
+    "left": 1030.5,
+    "top": 1002.7,
+    "alpha": 0,
+    "scale": 0,
+    "container": "container4_1"
+  },
+  {
+    "name": "muban",
+    "rename": "muban",
+    "left": 1184.5,
+    "top": 1056.5,
+    "alpha":0,
+    "scale":0,
+    "container": "container4_1"
+  },
+  {
+    "name": "tuteng",
+    "rename": "tuteng",
+    "left": 1083,
+    "top": 965,
+    "container": "container4_1"
+  },
+  {
+    "name": "cao1",
+    "rename": "cao1",
+    "left": 1193,
+    "top": 1123,
+    "container": "container4_1"
+  },
+  {
+    "name": "cao2",
+    "rename": "cao2",
+    "left": 1328,
+    "top": 1061,
+    "container": "container4_1"
+  },
+  {
+    "name": "tree_p",
+    "rename": "tree_p",
+    "left": 1799.7,
+    "top": 501.4,
+    "reg":[0.82,0]
+  },
+  {
+    "name": "tree",
+    "rename": "tree",
+    "left": 1799.7,
+    "top": 446.8
+  },
+  {
+    "name": "person2",
+    "rename": "person2",
+    "left": 1808.3,
+    "top": 544.8,
+    "skewY":180,
+    "alpha":0
+  }
+]
