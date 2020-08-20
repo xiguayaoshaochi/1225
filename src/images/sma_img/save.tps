@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>easaljs</string>
         <key>textureFileName</key>
-        <filename>../bigimg/sprite.png</filename>
+        <filename>../bigimg/sprite1.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -40,7 +40,7 @@
             </struct>
         </struct>
         <key>shapePadding</key>
-        <uint>0</uint>
+        <uint>2</uint>
         <key>jpgQuality</key>
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
@@ -50,7 +50,7 @@
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
-        <uint>0</uint>
+        <uint>2</uint>
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../bigimg/sprite.json</filename>
+        <filename>../bigimg/sprite1.json</filename>
         <key>mainExtension</key>
         <string></string>
         <key>forceIdenticalLayout</key>
@@ -169,7 +169,15 @@
             <filename>cha.png</filename>
             <filename>choose_kuang.png</filename>
             <filename>close.png</filename>
+            <filename>sp/stone.png</filename>
+            <filename>sp/cao.png</filename>
+            <filename>sp/guang.png</filename>
+            <filename>sp/jianci.png</filename>
+            <filename>sp/load.png</filename>
+            <filename>sp/lukuai.png</filename>
+            <filename>sp/lukuai2.png</filename>
             <filename>cs2_2.png</filename>
+            <filename>sp/door_s.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

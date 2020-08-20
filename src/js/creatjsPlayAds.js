@@ -2,8 +2,8 @@ var $ = require('jquery');
 window.first=()=>{
   window.dx1 = wb.yingzi.x - wsp.mine_all_ani.x;
   window.dy1 = wb.yingzi.y - wsp.mine_all_ani.y;
-  // window.dx2 = wb.yingzi2.x - wsp.mine_all_ani2.x;
-  // window.dy2 = wb.yingzi2.y - wsp.mine_all_ani2.y;
+  window.dx2 = wb.yingzi2.x - wsp.mine_all_ani2.x;
+  window.dy2 = wb.yingzi2.y - wsp.mine_all_ani2.y;
 }
 
 
@@ -271,12 +271,14 @@ window.eatLoop = function(obj, later, timer) {
   _this.mlock = true;
   
   setTimeouc(function () {
-    obj.gotoAndPlay("start");
+    obj.gotoAndPlay("jiao");
+    // console.log(obj.name)
     _this.c = setInterval(function () {
       if (_this.lock == true) {
-        obj.gotoAndPlay("start");
+        obj.gotoAndPlay("jiao");
+        // console.log(obj.name,"dierge")
         if (_this.mlock == true) {
-          wolf.play(0);
+          // wolf.play(0);
         }
       }
     }, timer)
@@ -707,6 +709,7 @@ window.Shake = function(obj, delay, moveX){
 
 // moveX 为正往右移动 为负往左移动
 // moveY 为正往下移动 为负往上移动
+window.wolf_lock = 1;
 window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
   // if (moveY-obj.y<0) {
   //   console.log("walk_zr")
@@ -715,6 +718,7 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
   //   console.log("walk_bz")
   //   obj.gotoAndPlay("walk_bz");
   // }
+  
   var timeimg = Math.abs(3000 / 400 * (moveX - obj.x)) > Math.abs(3000 / 400 * (moveY - obj.y)) ? Math.abs(3000 / 400 * (moveX - obj.x)) : Math.abs(3000 / 400 * (moveY - obj.y));
   timeimg = timeimg / speed;
   if (!obj._animation.speed) {
@@ -724,7 +728,7 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
 
   if (boolean == true) {
     if (other == "other") {
-      createjs.Tween.get(containerAll).to({ x: -124, y: -483 }, timeimg * 1.1, createjs.Ease.quadInOut);
+      createjs.Tween.get(containerAll).to({ x: -641.5, y: -314.2 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else if (other == "other1") {
       createjs.Tween.get(containerAll).to({ x: -564.3, y: -273.2 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else if (other == "other2") {
@@ -735,10 +739,15 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
   }
 
   if (obj.name == "mine_all_ani") {
-    // createjs.Tween.get(wb.qipao1).to({ x: wb.qipao1.x + moveX - obj.x, y: wb.qipao1.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
-    // createjs.Tween.get(wb.qipao_m).to({ x: wb.qipao_m.x + moveX - obj.x, y: wb.qipao_m.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
-    // createjs.Tween.get(wsp.mine_all_ani2).to({ x: wsp.mine_all_ani2.x + moveX - obj.x, y: wsp.mine_all_ani2.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
-    createjs.Tween.get(wb.yingzi).to({ x: wb.yingzi.x + moveX - obj.x, y: wb.yingzi.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
+    if(wolf_lock){
+      createjs.Tween.get(wsp.wolf_ani1).to({ x: wsp.wolf_ani1.x + moveX - obj.x, y: wsp.wolf_ani1.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani2).to({ x: wsp.wolf_ani2.x + moveX - obj.x, y: wsp.wolf_ani2.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani3).to({ x: wsp.wolf_ani3.x + moveX - obj.x, y: wsp.wolf_ani3.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani4).to({ x: wsp.wolf_ani4.x + moveX - obj.x, y: wsp.wolf_ani4.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
+    }
+    
+    createjs.Tween.get(wsp.mine_all_ani2).to({ x: wsp.mine_all_ani2.x + moveX - obj.x, y: wsp.mine_all_ani2.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
+    // createjs.Tween.get(wb.yingzi).to({ x: wb.yingzi.x + moveX - obj.x, y: wb.yingzi.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
     // createjs.Tween.get(wb.yingzi2).to({ x: wb.yingzi2.x + moveX - obj.x, y: wb.yingzi2.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
     // createjs.Tween.get(wb.yingzi3).to({ x: wb.yingzi2.x + moveX - obj.x, y: wb.yingzi2.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
     createjs.Tween.get(obj).to({ x: moveX, y: moveY }, timeimg, createjs.Ease.linear).call(function () {
@@ -1573,6 +1582,7 @@ window.addBitmap = (img_name, img_, x_, y_, addArr) => {
 // 序列帧加载完(base64不需要加载)初始化为全局对象
 window.addSpriteSheet = (img_name, img_, start_ani, x_, y_, scale_num, regx, regy, call) => {
   window.sprite[img_name] = new createjs.Sprite(img_, start_ani);
+  // window.sprite[img_name].sourceRect = new createjs.Rectangle(x_, y_, 0, 0);
   window.sprite[img_name].name = img_name;
   setTimeout(function () {
     // createjs.Tween.get(window.sprite[img_name]).to({alpha:1},200);

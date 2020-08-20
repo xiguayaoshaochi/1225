@@ -3,7 +3,7 @@ import '../css/index.css';
 window.json_sprite1 = require('../images/bigimg/sprite1.json');
 window.json_re = require('../js/resources.json');
 
-let spriteArr = ["cao", "guang", "jianci", "load", "lukuai", "lukuai2", "stone"];
+let spriteArr = ["cao", "guang", "jianci", "load", "lukuai", "lukuai2", "stone", "door_s"];
 let spriteNum = 0;
 spriteArr.forEach((item) => {
   import(/* webpackMode: "eager" */"../images/sma_img/sp/" + item + '.png').then(module => {
