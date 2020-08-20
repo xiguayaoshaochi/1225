@@ -189,6 +189,7 @@ let clickCS12 = () => {
 
 
 var goSecond = function(){
+  person.setChildIndex(wsp.door_ani, 0);
   wb.jt.sourceRect.x = 456;
   jtStart(1165.0, 846.0);
   wb.door_s.alpha=0;
