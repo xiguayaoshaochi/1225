@@ -1,9 +1,11 @@
 window.json_sprite = require('../images/bigimg/sprite.json');
+import light_ from '../images/sma_img/sp/light.png';
+import zhezhao_ from '../images/sma_img/sp/zhezhao.png';
 
 
 
 let imgArr = ["sprite", "yanhua1", "yanhua2",  
-  "person", "yanwu","huo"];
+  "man", "woman", "yanwu", "door", "huo", "wolf", "baoxiang"];
 let imgNum=0;
 imgArr.forEach((item)=>{
   import(/* webpackMode: "eager" */ "../images/bigimg/" + item + '.png').then(module =>{
@@ -79,28 +81,28 @@ var yanhua2_all = new createjs.SpriteSheet({
 
 var mine_all = new createjs.SpriteSheet({
   framerate: 15,
-  "images": [person_],
-  "frames": { "regX": 0, "height": 114, "count": 38, "regY": 0, "width": 110 },
+  "images": [man_],
+  "frames": { "regX": 0, "height": 114, "count": 9, "regY": 0, "width": 46 },
   "animations": {
-    "walk_br": [30, 37, "walk_br", 0.2],
-    "chui": [0, 19, "stop", 0.2],
-    "kan": [20, 29, "stop", 0.2],
+    "walk_br": [1, 8, "walk_br", 0.2],
+    // "chui": [0, 19, "stop", 0.2],
+    // "kan": [20, 29, "stop", 0.2],
     "stop": [0],
-    "stop1": [37],
+    // "stop1": [37],
   },
 });
 
-// var mine_all2 = new createjs.SpriteSheet({
-//   framerate: 15,
-//   "images": [person2_],
-//   "frames": { "regX": 0, "height": 120, "count": 28, "regY": 0, "width": 48 },
-//   "animations": {
-//     "walk_br": [20, 27, "walk_br", 0.2],
-//     "chui": [0, 19, "stop", 0.2],
-//     "stop": [0],
-//     "stop1": [26],
-//   },
-// });
+var mine_all2 = new createjs.SpriteSheet({
+  framerate: 15,
+  "images": [woman_],
+  "frames": { "regX": 0, "height": 114, "count": 9, "regY": 0, "width": 110 },
+  "animations": {
+    "walk_br": [1, 8, "walk_br", 0.2],
+    // "chui": [0, 19, "stop", 0.2],
+    "stop": [0],
+    // "stop1": [26],
+  },
+});
 
 
 
@@ -117,38 +119,39 @@ var mine_all = new createjs.SpriteSheet({
 var huo_all = new createjs.SpriteSheet({
   framerate: 15,
   "images": [huo_],
-  "frames": { "regX": 0, "height": 98, "count": 8, "regY": 0, "width": 95 },
+  "frames": { "regX": 0, "height": 177, "count": 8, "regY": 0, "width": 77 },
   "animations": {
     "start": [0, 7, "start", 0.35],
     "stop": [0],
   },
 });
 
-// var water_all = new createjs.SpriteSheet({
-//   framerate: 15,
-//   "images": [water_],
-//   "frames": { "regX": 0, "height": 125, "count": 16, "regY": 0, "width": 102 },
-//   "animations": {
-//     "start": [0, 15, "stop", 0.4],
-//     "start1": [0, 15, "start1", 0.4],
-//     "stop": [15],
-//   },
-// });
+var baoxiang_all = new createjs.SpriteSheet({
+  framerate: 15,
+  "images": [baoxiang_],
+  "frames": { "regX": 0, "height": 86, "count": 13, "regY": 0, "width": 83 },
+  "animations": {
+    "start": [0, 12, "stop1", 0.4],
+    // "start1": [0, 15, "start1", 0.4],
+    "stop": [0],
+    "stop": [12],
+  },
+});
 
 
 
 
   
 
-// var mine_all2 = new createjs.SpriteSheet({
-//   framerate: 15,
-//   "images": [person2_],
-//   "frames": { "regX": 0, "height": 113, "count": 9, "regY": 0, "width": 46 },
-//   "animations": {
-//     "walk_bz": [1, 8, "walk_bz", 0.2],
-//     "stop": [0],
-//   },
-// });
+var wolf_all = new createjs.SpriteSheet({
+  framerate: 15,
+  "images": [wolf_],
+  "frames": { "regX": 0, "height": 66, "count": 12, "regY": 0, "width": 60 },
+  "animations": {
+    "jiao": [0, 11, "jiao", 0.2],
+    "stop": [0],
+  },
+});
 
   
 
@@ -179,6 +182,9 @@ var yanwu1_all = new createjs.SpriteSheet({
 
   //开始前加载
   setTimeout(() => {
+  addBitmap('light', light_, 900, 447, "addArr6");
+  addBitmap('zhezhao', zhezhao_, 0, 0, "addArr6");
+
 
   addSpriteSheet("yanhua3_all", yanhua3_all, "start", 1250, 50, 1, 0.5, 0.5);
   addSpriteSheet("yanhua1_all", yanhua1_all, "start", 1250, 50, 1, 0.5, 0.5);
@@ -195,29 +201,35 @@ var yanwu1_all = new createjs.SpriteSheet({
     // addSpriteSheet("baozha_ani", yanwu2_all, "start", 804.6, 1164.3, 3, 0.5, 0.5);
     addSpriteSheet("yanwu_ani", yanwu1_all, "start", 1251.4, 1040.7, 1, 0.5, 0.5);
 
-    addSpriteSheet("huo_ani1", huo_all, "start", 928.9, 1291.7, 1, 0.5, 0.5);
-    addSpriteSheet("huo_ani2", huo_all, "start", 886.1, 1271.4, 1, 0.5, 0.5);
-    addSpriteSheet("huo_ani3", huo_all, "start", 844.8, 1255.5, 1, 0.5, 0.5);
-    addSpriteSheet("huo_ani4", huo_all, "start", 800.0, 1233.4, 1, 0.5, 0.5);
-    addSpriteSheet("huo_ani5", huo_all, "start", 881.9, 1236.5, 1, 0.5, 0.5);
+    
 
   
 
     addSpriteSheet("mine_all_ani", mine_all, "stop", 458.4, 1450.6, 1.05, 0.5, 0.5);
 
+    addSpriteSheet("huo_ani1", huo_all, "start", 486.8, 1232.2, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani2", huo_all, "start", 750.0, 1113.2, 0.8, 0.5, 0.5);
 
+    addSpriteSheet("huo_ani3", huo_all, "start", 1033.0, 975.4, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani4", huo_all, "start", 1204.0, 918.4, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani5", huo_all, "start", 1432.0, 813.4, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani6", huo_all, "start", 1660.0, 720.4, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani7", huo_all, "start", 1828.0, 639.4, 0.8, 0.5, 0.5);
+    addSpriteSheet("huo_ani8", huo_all, "start", 2020.0, 621.4, 0.8, 0.5, 0.5);
+
+    addSpriteSheet("baoxiang_ani", baoxiang_all, "stop", 2200.8, 683.0, 1, 0.5, 0.5);
+
+    
 
     addRectBitmap_simple('yingzi', 'yingzi', sprite_, json_sprite, 0.5, 0.5, 405.2, 1457.5 , "addArrAll", true);
     addRectBitmap_simple('yingzi2', 'yingzi', sprite_, json_sprite, 0.5, 0.5, 1778.5, 625.3, "addArrAll", true);
     addRectBitmap_simple('jt', 'jt', sprite_, json_sprite, 0.5, 0.95, 601.0, 618.5 , "addArrAll", true);
 
   
-    addRectBitmap_simple('qipao1', 'qipao1', sprite_, json_sprite, 0.9, 0.98, 443.3, 1199., "addArrAll", true);
-    addRectBitmap_simple('qipao2', 'qipao2', sprite_, json_sprite, 0.9, 0.95, 1501.1, 524.5, "addArrAll", true);
-    addRectBitmap_simple('qipao3', 'qipao3', sprite_, json_sprite, 0.1, 0.95, 1847.9, 496.5, "addArrAll", true);
+    // addRectBitmap_simple('qipao1', 'qipao1', sprite_, json_sprite, 0.9, 0.98, 443.3, 1199., "addArrAll", true);
+
 
     addRectBitmap_simple('go', 'go', sprite_, json_sprite, 0.5, 0.5, 802.7, 1259.2, "addArrAll", true);
-    addRectBitmap_simple('ice_all', 'ice_all', sprite_, json_sprite, 0.5, 0.5, 776.0, 1234.0, "addArrAll", true);
 
     
 
@@ -246,7 +258,7 @@ var yanwu1_all = new createjs.SpriteSheet({
   // addRectBitmap_simple('cs4_1','cs4_1',sprite_,json_sprite,0.5,0.5,970.3,846.1,"addArrAll",true);
   // addRectBitmap_simple('cs4_2','cs4_2',sprite_,json_sprite,0.5,0.5,971.8,790.5,"addArrAll",true);
     addRectBitmap_simple('an1_1', 'cs1_1', sprite_, json_sprite, 0.5, 0.5, 834.3, 1199.8, 1.5, true);
-    addRectBitmap_simple('an1_11', 'cs1_11', sprite_, json_sprite, 0.5, 0.5, 834.3, 1199.8, 1.5, true);
+    // addRectBitmap_simple('an1_11', 'cs1_11', sprite_, json_sprite, 0.5, 0.5, 834.3, 1199.8, 1.5, true);
     addRectBitmap_simple('an1_2', 'cs1_2', sprite_, json_sprite, 0.5,0.5, 904.9, 1207.7, "addArrAll", true);
   // addRectBitmap_simple('an2_1', 'cs2_1', sprite_, json_sprite, 0.5, 0.5, 912.8, 1260.1, 0.4, true);
     
@@ -291,7 +303,7 @@ setTimeout(() => {
 
 var start_pox = 46;
 var start_poy = 460;
-containerAll.y = -550;
+containerAll.y = -600;
 containerAll3.y = containerAll3.y - start_poy;
 containerAll2.y = containerAll2.y - start_poy;
 containerAll.x = 0;
@@ -332,24 +344,25 @@ window.wsp = window.sprite || {};
   // wb.yellow22.scaleX = wb.yellow22.scaleY = 1.15;
   // wb.yellow33.scaleX = wb.yellow33.scaleY = 1.15;
   // wb.an3_1.rotation = -20;
-
+  container4_2.addChild(wb.light);
   person.addChild( wb.fail, wb.yellow3);
   containerAll3.addChild(wb.sma_kuang, wb.bag, wb.open, wb.close, container3);
   containerAll2_cs.alpha = 0;
 
-  person.addChild(wsp.huo_ani1, wsp.huo_ani2, wsp.huo_ani3, wsp.huo_ani4, wb.ice_all, wb.an2_2,container4_1,wb.qiaoji,
-    wb.an1_1, wb.an1_11, 
-    wsp.yanwu_ani, wb.go, wb.an1_2, wb.qipao1, wb.qipao2, wb.qipao3, wb.hand2, wb.yingzi, wb.yingzi2, wb.an3_1, wsp.mine_all_ani, wb.an3_2,wsp.huo_ani5);
+  person.addChild(wb.an2_2,container4_1,wb.qiaoji,
+    wb.an1_1, wsp.huo_ani1, wsp.huo_ani2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5, wsp.huo_ani6, wsp.huo_ani7, wsp.huo_ani8, wsp.baoxiang_ani,
+    wsp.yanwu_ani, wb.go, wb.an1_2, wb.hand2, wb.yingzi, wb.yingzi2, wb.an3_1, wsp.mine_all_ani, wb.an3_2
+    );
 
 
-  window.arr_zero = [wb.fail, wb.cs2_1, wb.cs2_2, wb.cs3_1, wb.cs3_2, wsp.huo_ani1, wb.yingzi2,wsp.huo_ani2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5,
-    wb.an1_1, wb.an1_11,  wb.an1_2, wb.an2_2, wb.an3_1, wb.an3_2,wb.ice_all,
+  window.arr_zero = [wb.fail, wb.cs2_1, wb.cs2_2, wb.cs3_1, wb.cs3_2, wb.yingzi2, wb.light, 
+    wb.an1_1, wb.an1_2, wb.an2_2, wb.an3_1, wb.an3_2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5, wsp.huo_ani6, wsp.huo_ani7, wsp.huo_ani8,
     // wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4, wsp.wolf_ani5, wsp.wolf_ani6, wsp.wolf_ani7, wsp.wolf_ani8, wsp.wolf_ani9, wsp.wolf_ani10,
     wb.qiaoji, wsp.yanwu_ani, wb.yellow3, wb.go, wb.hand2];
 
 
 
-  window.arr_zero2 = [wb.qipao1, wb.qipao2, wb.qipao3];
+  // window.arr_zero2 = [wb.qipao1];
 
   window.alphaZero = function (arr_zero) {
     for (var i = 0; i < arr_zero.length; i++) {
@@ -365,7 +378,7 @@ window.wsp = window.sprite || {};
     }
   }
 
-  scaleZero(arr_zero2);
+  // scaleZero(arr_zero2);
 
 
   wb.fail.scaleX = wb.fail.scaleY = 1.3;
@@ -373,9 +386,9 @@ window.wsp = window.sprite || {};
   // wsp.mine_all_ani3.scaleX = wsp.mine_all_ani3.scaleY = 1.12;
   // wsp.yanwu_ani.scaleX = wsp.yanwu_ani.scaleY = 2.5;
   // wsp.zhadan_ani.scaleX = wsp.zhadan_ani.scaleY = 1.3;
-  wb.qipao1.skewY = 180;
-
-
+  // wb.qipao1.skewY = 180;
+  // containerAll.x = -1285;
+  // containerAll.y = -69.8;
 
 
   wb.open.addEventListener("mousedown", function () {

@@ -1,9 +1,9 @@
-// import caodi_ from '../images/sma_img/sp/caodi.png';
+
 import '../css/index.css';
 window.json_sprite1 = require('../images/bigimg/sprite1.json');
 window.json_re = require('../js/resources.json');
 
-let spriteArr = ["muban", "nidui", "snow", "tree", "person2", "tree_p", "zhenci", "tuteng", "cao1", "cao2"];
+let spriteArr = ["cao", "guang", "jianci", "load", "lukuai", "lukuai2", "stone"];
 let spriteNum = 0;
 spriteArr.forEach((item) => {
   import(/* webpackMode: "eager" */"../images/sma_img/sp/" + item + '.png').then(module => {

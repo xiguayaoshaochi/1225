@@ -149,7 +149,6 @@
             <filename>cs1_1.png</filename>
             <filename>cs1_2.png</filename>
             <filename>cs2_1.png</filename>
-            <filename>cs2-2.png</filename>
             <filename>cs3_1.png</filename>
             <filename>cs3_2.png</filename>
             <filename>fail.png</filename>
@@ -176,6 +175,8 @@
             <filename>sp/jianci.png</filename>
             <filename>sp/load.png</filename>
             <filename>sp/lukuai.png</filename>
+            <filename>sp/lukuai2.png</filename>
+            <filename>cs2_2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

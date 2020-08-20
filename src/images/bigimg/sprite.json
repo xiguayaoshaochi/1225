@@ -35,7 +35,7 @@
         "cs3_2":[3], 
         "cs1_1":[4], 
         "cha":[5], 
-        "cs2-2":[6], 
+        "cs2_2":[6], 
         "gou":[7], 
         "play_btn":[8], 
         "open":[9], 
@@ -55,7 +55,7 @@
         "pow_img":[23]
 },
 "texturepacker": [
-        "SmartUpdateHash: $TexturePacker:SmartUpdate:4e2dfdeb90fb16e5f687fe86614fa5bf$",
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:09ad383d5dd91a71340535ffbde74972$",
         "Created with TexturePacker (http://www.texturepacker.com) for EasalJS"
 ]
 }

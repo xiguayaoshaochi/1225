@@ -149,7 +149,6 @@
             <filename>cs1_1.png</filename>
             <filename>cs1_2.png</filename>
             <filename>cs2_1.png</filename>
-            <filename>cs2-2.png</filename>
             <filename>cs3_1.png</filename>
             <filename>cs3_2.png</filename>
             <filename>fail.png</filename>
@@ -170,6 +169,7 @@
             <filename>cha.png</filename>
             <filename>choose_kuang.png</filename>
             <filename>close.png</filename>
+            <filename>cs2_2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
