@@ -10,7 +10,7 @@ var cjs = createjs;
   // createjs.Tween.get(wb.go).to({ alpha: 1 }, 500);
   // createjs.Tween.get(wb.go, { loop: true }).to({ scaleX: 1.1, scaleY: 1.1 }, 600).to({ scaleX: 1, scaleY: 1 }, 400);
 
-
+wb.jt.sourceRect.x = 456;
 setTimeout(() => {
   // wsp.mine_all_ani.gotoAndPlay("walk_br");
   // mapMove(wsp.mine_all_ani, 567.6, 1382.4, 1, false, showFirst, "other");
