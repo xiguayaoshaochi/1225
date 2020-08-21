@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>easaljs</string>
         <key>textureFileName</key>
-        <filename>../bigimg/sprite1.png</filename>
+        <filename>../bigimg/sprite.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../bigimg/sprite1.json</filename>
+        <filename>../bigimg/sprite.json</filename>
         <key>mainExtension</key>
         <string></string>
         <key>forceIdenticalLayout</key>
@@ -146,16 +146,6 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>cs1_1.png</filename>
-            <filename>cs1_2.png</filename>
-            <filename>cs2_1.png</filename>
-            <filename>cs3_1.png</filename>
-            <filename>cs3_2.png</filename>
-            <filename>fail.png</filename>
-            <filename>go.png</filename>
-            <filename>gou.png</filename>
-            <filename>hand.png</filename>
-            <filename>hand1.png</filename>
             <filename>jt.png</filename>
             <filename>logo_ema.png</filename>
             <filename>open.png</filename>
@@ -169,15 +159,17 @@
             <filename>cha.png</filename>
             <filename>choose_kuang.png</filename>
             <filename>close.png</filename>
-            <filename>sp/stone.png</filename>
-            <filename>sp/cao.png</filename>
-            <filename>sp/guang.png</filename>
-            <filename>sp/jianci.png</filename>
-            <filename>sp/load.png</filename>
-            <filename>sp/lukuai.png</filename>
-            <filename>sp/lukuai2.png</filename>
+            <filename>cs1_1.png</filename>
+            <filename>cs1_2.png</filename>
+            <filename>cs2_1.png</filename>
             <filename>cs2_2.png</filename>
-            <filename>sp/door_s.png</filename>
+            <filename>cs3_1.png</filename>
+            <filename>cs3_2.png</filename>
+            <filename>fail.png</filename>
+            <filename>go.png</filename>
+            <filename>gou.png</filename>
+            <filename>hand.png</filename>
+            <filename>hand1.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

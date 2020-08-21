@@ -178,6 +178,8 @@
             <filename>sp/lukuai2.png</filename>
             <filename>cs2_2.png</filename>
             <filename>sp/door_s.png</filename>
+            <filename>sp/cao2.png</filename>
+            <filename>sp/lukuai1.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

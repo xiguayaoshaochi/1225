@@ -732,7 +732,7 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
     } else if (other == "other1") {
       createjs.Tween.get(containerAll).to({ x: -564.3, y: -273.2 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else if (other == "other2") {
-      createjs.Tween.get(containerAll).to({ x: -1042, y: -15 }, timeimg * 0.7, createjs.Ease.quadInOut);
+      createjs.Tween.get(containerAll).to({ x: -272, y: -459 }, timeimg * 0.7, createjs.Ease.quadInOut);
     } else {
       createjs.Tween.get(containerAll).to({ x: containerAll.x - (moveX - obj.x), y: containerAll.y - (moveY - obj.y) }, timeimg * 1.1, createjs.Ease.quadInOut);
     }
@@ -740,10 +740,10 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
 
   if (obj.name == "mine_all_ani") {
     if(wolf_lock){
-      createjs.Tween.get(wsp.wolf_ani1).to({ x: wsp.wolf_ani1.x + moveX - obj.x, y: wsp.wolf_ani1.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
-      createjs.Tween.get(wsp.wolf_ani2).to({ x: wsp.wolf_ani2.x + moveX - obj.x, y: wsp.wolf_ani2.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
-      createjs.Tween.get(wsp.wolf_ani3).to({ x: wsp.wolf_ani3.x + moveX - obj.x, y: wsp.wolf_ani3.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
-      createjs.Tween.get(wsp.wolf_ani4).to({ x: wsp.wolf_ani4.x + moveX - obj.x, y: wsp.wolf_ani4.y + moveY - obj.y }, timeimg - 400, createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani1).to({ x: wsp.wolf_ani1.x + moveX - obj.x, y: wsp.wolf_ani1.y + moveY - obj.y }, timeimg , createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani2).to({ x: wsp.wolf_ani2.x + moveX - obj.x, y: wsp.wolf_ani2.y + moveY - obj.y }, timeimg , createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani3).to({ x: wsp.wolf_ani3.x + moveX - obj.x, y: wsp.wolf_ani3.y + moveY - obj.y }, timeimg , createjs.Ease.linear);
+      createjs.Tween.get(wsp.wolf_ani4).to({ x: wsp.wolf_ani4.x + moveX - obj.x, y: wsp.wolf_ani4.y + moveY - obj.y }, timeimg , createjs.Ease.linear);
     }
     
     createjs.Tween.get(wsp.mine_all_ani2).to({ x: wsp.mine_all_ani2.x + moveX - obj.x, y: wsp.mine_all_ani2.y + moveY - obj.y }, timeimg, createjs.Ease.linear);
@@ -778,8 +778,8 @@ window.mapMovecs = function (obj, moveX, moveY, speed, boolean, callback, other,
   }
 
   if (boolean == true) {
-    if (other == "other3") {
-      createjs.Tween.get(containerAll).to({ x: -436, y: -549 }, timeimg * 1.1, createjs.Ease.quadInOut);
+    if (other == "other") {
+      createjs.Tween.get(containerAll).to({ x: -1453.0, y: 73.6 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else {
       createjs.Tween.get(containerAll).to({ x: containerAll.x - (moveX - obj.x), y: containerAll.y - (moveY - obj.y) }, timeimg * 1, createjs.Ease.quadInOut);
     }

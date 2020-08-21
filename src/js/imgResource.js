@@ -135,7 +135,7 @@ var baoxiang_all = new createjs.SpriteSheet({
     "start": [0, 12, "stop1", 0.4],
     // "start1": [0, 15, "start1", 0.4],
     "stop": [0],
-    "stop": [12],
+    "stop1": [12],
   },
 });
 
@@ -202,14 +202,14 @@ var yanwu1_all = new createjs.SpriteSheet({
     // addSpriteSheet("baozha_ani", yanwu2_all, "start", 804.6, 1164.3, 3, 0.5, 0.5);
     addSpriteSheet("yanwu_ani", yanwu1_all, "start", 1251.4, 1040.7, 1, 0.5, 0.5);
 
-    addSpriteSheet("wolf_ani1", wolf_all, "stop", 534.1, 1415.7, 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani2", wolf_all, "stop", 563.5, 1449.1, 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani3", wolf_all, "stop", 450.6, 1449.1, 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani4", wolf_all, "stop", 481.6, 1490.8, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani1", wolf_all, "stop", 430.5, 1471.3, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani2", wolf_all, "stop", 470.8, 1503.1 , 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani3", wolf_all, "stop", 350.1, 1503.2, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani4", wolf_all, "stop", 382.7, 1535.6 , 1.05, 0.5, 0.5);
 
     
-    addSpriteSheet("mine_all_ani2", mine_all2, "stop", 694.9, 1359.5, 1.05, 0.5, 0.5);
-    addSpriteSheet("mine_all_ani", mine_all, "stop", 650.1, 1348.6 , 1.1, 0.5, 0.5);
+    addSpriteSheet("mine_all_ani2", mine_all2, "walk_br", 585.1, 1413.6, 1.05, 0.5, 0.5);
+    addSpriteSheet("mine_all_ani", mine_all, "walk_br", 541.9, 1398.0 , 1.1, 0.5, 0.5);
 
     
     addSpriteSheet("door_ani", door_all, "stop", 958.0, 1188.3, 1, 0.5, 0.5);
@@ -258,20 +258,20 @@ var yanwu1_all = new createjs.SpriteSheet({
     addRectBitmap_simple('an2_2', 'cs2_22', sprite_, json_sprite, 0.5, 0.5, 1197.5, 1006.7, 1, true);
   }else{
     addRectBitmap_simple('cs2_2', 'cs2_2', sprite_, json_sprite, 0.5, 0.5, 971.8, 790.5, 1, true);
-    addRectBitmap_simple('an2_2', 'cs2_2', sprite_, json_sprite, 0.5, 0.5, 1197.5, 1006.7, 1, true);
+    addRectBitmap_simple('an2_2', 'cs2_2', sprite_, json_sprite, 0.1, 0.9, 1282.5, 906.3 , 1, true);
   }
   
-  addRectBitmap_simple('cs3_1', 'cs3_1', sprite_, json_sprite, 0.5, 0.5, 1765.8, 579.4, "addArrAll", true);
+    addRectBitmap_simple('cs3_1', 'cs3_1', sprite_, json_sprite, 0.5, 0.5, 1712.0, 854.2, "addArrAll", true);
   addRectBitmap_simple('cs3_2', 'cs3_2', sprite_, json_sprite, 0.5, 0.5, 971.8, 790.5, "addArrAll", true);
   // addRectBitmap_simple('cs4_1','cs4_1',sprite_,json_sprite,0.5,0.5,970.3,846.1,"addArrAll",true);
   // addRectBitmap_simple('cs4_2','cs4_2',sprite_,json_sprite,0.5,0.5,971.8,790.5,"addArrAll",true);
     addRectBitmap_simple('an1_1', 'cs1_1', sprite_, json_sprite, 0.5, 0.5, 834.3, 1199.8, 1, true);
     // addRectBitmap_simple('an1_11', 'cs1_11', sprite_, json_sprite, 0.5, 0.5, 834.3, 1199.8, 1.5, true);
     addRectBitmap_simple('an1_2', 'cs1_2', sprite_, json_sprite, 0.5,0.5, 904.9, 1207.7, "addArrAll", true);
-  // addRectBitmap_simple('an2_1', 'cs2_1', sprite_, json_sprite, 0.5, 0.5, 912.8, 1260.1, 0.4, true);
+    addRectBitmap_simple('an2_1', 'cs2_1', sprite_, json_sprite, 0.5, 0.5, 1110.9, 892.4, 0.9, true);
     
-    addRectBitmap_simple('an3_1', 'cs3_1', sprite_, json_sprite, 0.8, 0.8, 1822.8, 621.0, "addArrAll", true);
-    addRectBitmap_simple('an3_2', 'cs3_2', sprite_, json_sprite, 0.5, 0.5, 1632.4, 648.1, 1, true);
+    addRectBitmap_simple('an3_1', 'cs3_1', sprite_, json_sprite, 0.5, 0.5, 1810.0, 756.8, "addArrAll", true);
+    addRectBitmap_simple('an3_2', 'cs3_2', sprite_, json_sprite, 0.5, 0.5, 1712.0, 854.2, 1, true);
 
   // addRectBitmap_simple('ok1', 'choose_s', sprite_, json_sprite, 0.5, 0.5, 970.3, 846.1, "addArrAll", true);
   // addRectBitmap_simple('ok2', 'choose_s', sprite_, json_sprite, 0.5, 0.5, 971.8, 790.5, "addArrAll", true);
@@ -357,14 +357,14 @@ window.wsp = window.sprite || {};
   containerAll3.addChild(wb.sma_kuang, wb.bag, wb.open, wb.close, container3);
   containerAll2_cs.alpha = 0;
 
-  person.addChild(wb.an2_2, wb.qiaoji, wsp.door_ani, wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4,
+  person.addChild(wb.an2_2, wb.an2_1, wb.qiaoji, wsp.door_ani, wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4,
     wb.an1_1, wsp.huo_ani1, wsp.huo_ani2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5, wsp.huo_ani6, wsp.huo_ani7, wsp.huo_ani8, wsp.baoxiang_ani,
-    wsp.yanwu_ani, wb.go, wb.an1_2, wb.hand2, wb.yingzi, wb.yingzi2, wb.an3_1, wsp.mine_all_ani, wsp.mine_all_ani2, wb.an3_2, container4_1,wb.zhezhao
+    wsp.yanwu_ani, wb.go, wb.an1_2, wb.hand2, wb.yingzi, wb.yingzi2, wb.an3_1, wb.an3_2, container4_1, wsp.mine_all_ani, wsp.mine_all_ani2,wb.zhezhao
     );
 
 
   window.arr_zero = [wb.fail, wb.cs2_1, wb.cs2_2, wb.cs3_1, wb.cs3_2, wb.yingzi2, wb.light, 
-    wb.an1_1, wb.an1_2, wb.an2_2, wb.an3_1, wb.an3_2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5, wsp.huo_ani6, wsp.huo_ani7, wsp.huo_ani8, wb.zhezhao,
+    wb.an1_1, wb.an1_2, wb.an2_1,  wb.an2_2, wb.an3_1, wb.an3_2, wsp.huo_ani3, wsp.huo_ani4, wsp.huo_ani5, wsp.huo_ani6, wsp.huo_ani7, wsp.huo_ani8, wb.zhezhao,
     // wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4, wsp.wolf_ani5, wsp.wolf_ani6, wsp.wolf_ani7, wsp.wolf_ani8, wsp.wolf_ani9, wsp.wolf_ani10,
     wb.qiaoji, wsp.yanwu_ani, wb.yellow3, wb.go, wb.hand2];
 
@@ -397,8 +397,9 @@ window.wsp = window.sprite || {};
   // wb.qipao1.skewY = 180;
   // containerAll.x = -1285;
   // containerAll.y = -69.8;
-  wsp.mine_all_ani2.skewY = 180;
-  wsp.mine_all_ani.skewY = 180;
+  // wsp.mine_all_ani2.skewY = 180;
+  // wsp.mine_all_ani.skewY = 180;
+  wb.an2_2.rotation = -110;
 
 
   wb.open.addEventListener("mousedown", function () {
