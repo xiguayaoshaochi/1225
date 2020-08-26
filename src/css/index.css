@@ -125,12 +125,12 @@ em, strong, th, optgroup {
 
   } 
 
-  @font-face {
+  /* @font-face {
   font-family: 'source';
   src:url('./font/test.ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 
 /*使用指定字体*/

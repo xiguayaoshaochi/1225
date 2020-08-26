@@ -202,14 +202,14 @@ var yanwu1_all = new createjs.SpriteSheet({
     // addSpriteSheet("baozha_ani", yanwu2_all, "start", 804.6, 1164.3, 3, 0.5, 0.5);
     addSpriteSheet("yanwu_ani", yanwu1_all, "start", 1251.4, 1040.7, 1, 0.5, 0.5);
 
-    addSpriteSheet("wolf_ani1", wolf_all, "stop", 430.5, 1471.3, 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani2", wolf_all, "stop", 470.8, 1503.1 , 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani3", wolf_all, "stop", 350.1, 1503.2, 1.05, 0.5, 0.5);
-    addSpriteSheet("wolf_ani4", wolf_all, "stop", 382.7, 1535.6 , 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani1", wolf_all, "stop", 561.9, 1404.9, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani2", wolf_all, "stop", 583.7, 1442.9, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani3", wolf_all, "stop", 483.0, 1449.1, 1.05, 0.5, 0.5);
+    addSpriteSheet("wolf_ani4", wolf_all, "stop", 503.3, 1487.7, 1.05, 0.5, 0.5);
 
     
-    addSpriteSheet("mine_all_ani2", mine_all2, "walk_br", 585.1, 1413.6, 1.05, 0.5, 0.5);
-    addSpriteSheet("mine_all_ani", mine_all, "walk_br", 541.9, 1398.0 , 1.1, 0.5, 0.5);
+    addSpriteSheet("mine_all_ani2", mine_all2, "walk_br", 662.4, 1370.3, 1.05, 0.5, 0.5);
+    addSpriteSheet("mine_all_ani", mine_all, "walk_br", 704.2, 1316.1, 1.1, 0.5, 0.5);
 
     
     addSpriteSheet("door_ani", door_all, "stop", 958.0, 1188.3, 1, 0.5, 0.5);

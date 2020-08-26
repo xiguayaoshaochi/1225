@@ -1,4 +1,4 @@
-var $ = require('jquery');
+// var $ = require('jquery');
 window.first=()=>{
   window.dx1 = wb.yingzi.x - wsp.mine_all_ani.x;
   window.dy1 = wb.yingzi.y - wsp.mine_all_ani.y;
@@ -730,7 +730,7 @@ window.mapMove = function (obj, moveX, moveY, speed, boolean, callback,other) {
     if (other == "other") {
       createjs.Tween.get(containerAll).to({ x: -641.5, y: -314.2 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else if (other == "other1") {
-      createjs.Tween.get(containerAll).to({ x: -564.3, y: -273.2 }, timeimg * 1.1, createjs.Ease.quadInOut);
+      createjs.Tween.get(containerAll).to({ x: -108.2, y: -562.9 }, timeimg * 1.1, createjs.Ease.quadInOut);
     } else if (other == "other2") {
       createjs.Tween.get(containerAll).to({ x: -272, y: -459 }, timeimg * 0.7, createjs.Ease.quadInOut);
     } else {

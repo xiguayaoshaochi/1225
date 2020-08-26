@@ -24,10 +24,10 @@ setTimeout(() => {
       if (index != 6 && index != 8) {
         createjs.Tween.get(eval('wb.guang' + index), { loop: true }).to({ alpha: 0.6 }, 1000, cjs.Ease.quadInOut).to({ alpha: 1 }, 1000, cjs.Ease.quadInOut); 
       }
-      
     }, index * 100);
   }
-  mapMove(wsp.mine_all_ani, 977.9, 1180.2, 1, true, chooseOne, "other2");
+  first();
+  mapMove(wsp.mine_all_ani, 977.9, 1180.2, 1.5, true, chooseOne, "other1");
   person.addChild(wsp.door_ani, wb.cao2, wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4, wsp.mine_all_ani, wsp.mine_all_ani2,wb.door_s);
 }, 50);
 
@@ -42,7 +42,7 @@ createjs.Tween.get(stage).to({ scaleX: 1, scaleY: 1 }, 500).call(function () {
   // }, sTime(wsp.mine_all_ani, "chui"));
   setTimeout(() => {
     // showFirst();
-    first();
+    
     
   }, 1500);
   
@@ -195,7 +195,7 @@ let clickCS12 = () => {
   createjs.Tween.get(wb.an1_2).to({ alpha: 1 }, 100)
   .to({ x: 920, y: 1190, scaleX: 0.5, scaleY: 0.5 }, 500, createjs.Ease.quadIn).wait(150).to({ alpha: 0 }, 200).call(()=>{
     wsp.door_ani.gotoAndPlay("start");
-    openStoneDoor.play(0);
+    // openStoneDoor.play(0);
     person.addChild(wsp.door_ani,wb.cao2, wsp.wolf_ani1, wsp.wolf_ani2, wsp.wolf_ani3, wsp.wolf_ani4);
     setTimeout(() => {
       goSecond();
@@ -288,10 +288,11 @@ let clickCS22 = () => {
   wb.yellow2.alpha = 1;
   person.addChild(wb.an2_2);
   cjs.Tween.get(wb.an2_2, { loop: false }).to({ alpha: 1 }, 150)
-    .to({ rotation: -150 }, 350)
-    .to({ rotation: -110 }, 350)
-    .to({ rotation: -150 }, 350)
-    .to({ rotation: -110 }, 350).call(()=>{
+    // .to({ rotation: -150 }, 350)
+    // .to({ rotation: -110 }, 350)
+    // .to({ rotation: -150 }, 350)
+    // .to({ rotation: -110 }, 350)
+    .call(()=>{
       person.addChild(wb.fail);
       wb.fail.alpha = 1;
       wb.fail.x = 1213.4; wb.fail.y = 978.5;
