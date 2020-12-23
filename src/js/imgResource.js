@@ -25,6 +25,7 @@ imgArr.forEach((item)=>{
 
 function loadCompleteimgArr(){
   var resizerq = require("./resize.js");
+  console.log('rezise')
   resizerq.resizeContent("canvas");
   
 

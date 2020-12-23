@@ -1,4 +1,4 @@
-// var $ = require('jquery');
+var $ = require('jquery');
 window.first=()=>{
   window.dx1 = wb.yingzi.x - wsp.mine_all_ani.x;
   window.dy1 = wb.yingzi.y - wsp.mine_all_ani.y;

@@ -1,5 +1,6 @@
 // import bg_ from '../images/JPNGmin/bg.jpg';
 // var bg_ = require('../images/JPNGmin/bg.jpg');
+import {indexcss} from '../css/index.css'
 window.wsp = window.sprite || {};
 window.wb = window.bitmaps ||{};
 window.stage = new createjs.Stage(window.canvas);
@@ -189,4 +190,5 @@ if (agent.indexOf('iphone') >= 0 || agent.indexOf('ipad') >= 0) {
 
 
 
-module.exports = verifyStatus;
+// module.exports = verifyStatus;
+export default verifyStatus;
