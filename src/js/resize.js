@@ -18,7 +18,7 @@ var resize = {
       stage.y = -375;
       canvas.height = art_size;
       //横屏
-      resize.horizontalChange();
+      // resize.horizontalChange();
       containerAll2_cs.x = 0;
       if (ratio > (1 / ratio1)) {
         //背景拉宽 元素保持左右居中
@@ -44,7 +44,7 @@ var resize = {
       canvas.width = art_size;
       canvas.height = H / stageScalea;
       //竖屏
-      resize.verticalChange();
+      // resize.verticalChange();
       if (window.innerHeight > 1000) {
         containerAll2_cs.y = 50;
       } else {
@@ -82,18 +82,18 @@ var resize = {
   
     if (window.pageState == "heng") {
       window.pageState = "shu";
-      resize.shuChange();
+      // resize.shuChange();
       setTimeouc(function () {
         resize.changeBind();
       }, 500)
       if (typeof wb.pow_img != "undefined") {
         containerAll2.scaleX = containerAll2.scaleY = 1;
-        wb.pow_img.x = Shu_pow_img_x;
-        wb.pow_img.y = Shu_pow_img_y;
-        wb.play_btn.x = Shu_play_btn_x;
-        wb.play_btn.y = Shu_play_btn_y;
-        wb.logo.x = Shu_logo_x;
-        wb.logo.y = Shu_logo_y;
+        // wb.pow_img.x = Shu_pow_img_x;
+        // wb.pow_img.y = Shu_pow_img_y;
+        // wb.play_btn.x = Shu_play_btn_x;
+        // wb.play_btn.y = Shu_play_btn_y;
+        // wb.logo.x = Shu_logo_x;
+        // wb.logo.y = Shu_logo_y;
       }
   
   
@@ -179,7 +179,7 @@ var resize = {
   
     if (window.pageState == "shu") {
       window.pageState = "heng";
-      resize.hengChange();
+      // resize.hengChange();
   
       setTimeouc(function () {
         resize.changeBind();

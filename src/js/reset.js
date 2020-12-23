@@ -1,5 +1,5 @@
 // import bg_ from '../images/JPNGmin/bg.jpg';
-var bg_ = require('../images/JPNGmin/bg.jpg');
+// var bg_ = require('../images/JPNGmin/bg.jpg');
 window.wsp = window.sprite || {};
 window.wb = window.bitmaps ||{};
 window.stage = new createjs.Stage(window.canvas);
@@ -43,8 +43,8 @@ window.con_blue = new createjs.Container();
 window.person = new createjs.Container();
 
 
-addBitmap('bg',bg_,0,0,"addArr6");
-container4_2.addChild(wb.bg);
+// addBitmap('bg',bg_,0,0,"addArr6");
+// container4_2.addChild(wb.bg);
 createjs.MotionGuidePlugin.install();
 // stage.enableMouseOver(10);
 window.stage.addChild(containerAll, containerAll_yh, containerAll2, containerAll3);

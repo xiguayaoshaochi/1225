@@ -70,7 +70,7 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
@@ -99,7 +99,7 @@
             <key>packageName</key>
             <string>Texture</string>
             <key>javaFileName</key>
-            <filename>../bigimg/person2.java</filename>
+            <filename>../bigimg/sprite.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -124,7 +124,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>globalSpriteSettings</key>
@@ -146,30 +146,20 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>jt.png</filename>
-            <filename>logo_ema.png</filename>
-            <filename>open.png</filename>
-            <filename>play_btn.png</filename>
-            <filename>pow_img.png</filename>
-            <filename>qiaoji.png</filename>
-            <filename>sma_kuang.png</filename>
-            <filename>yellow.png</filename>
-            <filename>yingzi.png</filename>
-            <filename>bag.png</filename>
-            <filename>cha.png</filename>
-            <filename>choose_kuang.png</filename>
-            <filename>close.png</filename>
-            <filename>cs1_1.png</filename>
-            <filename>cs1_2.png</filename>
-            <filename>cs2_1.png</filename>
-            <filename>cs2_2.png</filename>
-            <filename>cs3_1.png</filename>
-            <filename>cs3_2.png</filename>
-            <filename>fail.png</filename>
-            <filename>go.png</filename>
-            <filename>gou.png</filename>
+            <filename>bg.png</filename>
+            <filename>bottom.png</filename>
+            <filename>car_b.png</filename>
+            <filename>car_r.png</filename>
+            <filename>car_y.png</filename>
+            <filename>g1.png</filename>
+            <filename>g2.png</filename>
             <filename>hand.png</filename>
-            <filename>hand1.png</filename>
+            <filename>road.png</filename>
+            <filename>top.png</filename>
+            <filename>card.png</filename>
+            <filename>end_btn.png</filename>
+            <filename>txt1.png</filename>
+            <filename>you_win.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
