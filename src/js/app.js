@@ -1,5 +1,5 @@
 var cjs = createjs;
-  //开始 
+  //开始 da
   // con_red.filters = [new createjs.ColorFilter(0.45, 0.45, 0.45, 1, 140.25, 13.2, 13.2, 0), new createjs.ColorMatrixFilter(new createjs.ColorMatrix(100, 0, 0, 0))];
   // con_red.filters = [new createjs.ColorFilter(0.45, 0.45, 0.45, 1, 140.25, 13.2, 13.2, 0)];
   // con_red.cache(1100, 600, 400, 400);
