@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>easaljs</string>
         <key>textureFileName</key>
-        <filename>../bigimg/sprite.png</filename>
+        <filename>../../../../1223/src/images/bigimg/sprite.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -99,7 +99,7 @@
             <key>packageName</key>
             <string>Texture</string>
             <key>javaFileName</key>
-            <filename>../bigimg/sprite.java</filename>
+            <filename>../../../../1223/src/images/bigimg/sprite.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../bigimg/sprite.json</filename>
+        <filename>../../../../1223/src/images/bigimg/sprite.json</filename>
         <key>mainExtension</key>
         <string></string>
         <key>forceIdenticalLayout</key>
@@ -146,20 +146,20 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>bg.png</filename>
-            <filename>bottom.png</filename>
-            <filename>car_b.png</filename>
-            <filename>car_r.png</filename>
-            <filename>car_y.png</filename>
-            <filename>g1.png</filename>
-            <filename>g2.png</filename>
-            <filename>hand.png</filename>
-            <filename>road.png</filename>
-            <filename>top.png</filename>
-            <filename>card.png</filename>
-            <filename>end_btn.png</filename>
-            <filename>txt1.png</filename>
-            <filename>you_win.png</filename>
+            <filename>../../../../1223/src/images/sma_img/bg.png</filename>
+            <filename>../../../../1223/src/images/sma_img/bottom.png</filename>
+            <filename>../../../../1223/src/images/sma_img/car_b.png</filename>
+            <filename>../../../../1223/src/images/sma_img/car_r.png</filename>
+            <filename>../../../../1223/src/images/sma_img/car_y.png</filename>
+            <filename>../../../../1223/src/images/sma_img/g1.png</filename>
+            <filename>../../../../1223/src/images/sma_img/g2.png</filename>
+            <filename>../../../../1223/src/images/sma_img/hand.png</filename>
+            <filename>../../../../1223/src/images/sma_img/road.png</filename>
+            <filename>../../../../1223/src/images/sma_img/top.png</filename>
+            <filename>../../../../1223/src/images/sma_img/card.png</filename>
+            <filename>../../../../1223/src/images/sma_img/end_btn.png</filename>
+            <filename>../../../../1223/src/images/sma_img/txt1.png</filename>
+            <filename>../../../../1223/src/images/sma_img/you_win.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
