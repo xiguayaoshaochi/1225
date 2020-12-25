@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "buildshowall": "webpack --display-modules",
-    "start": "webpack-dev-server --hotOnly"
+    "start": "webpack-dev-server --hotOnly --host 192.168.8.145"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,4 @@
-var $ = require('jquery');
+// var $ = require('jquery');
 window.first=()=>{
   window.dx1 = wb.yingzi.x - wsp.mine_all_ani.x;
   window.dy1 = wb.yingzi.y - wsp.mine_all_ani.y;
@@ -60,8 +60,6 @@ window.endShow = function (choose) {
     wsp.yanhua2_all.scaleX = wsp.yanhua2_all.scaleY = 2; wsp.yanhua22_all.scaleX = wsp.yanhua22_all.scaleY = 2;
     wsp.yanhua2_all.alpha = 0; wsp.yanhua22_all.alpha = 0;
 
-    containerAll_yh.addChild(wsp.yanhua3_all, wsp.yanhua1_all, wsp.yanhua33_all, wsp.yanhua11_all, wsp.yanhua333_all, wsp.yanhua111_all
-      , wsp.yanhua22_all, wsp.yanhua2_all);
     yanhuaChange();
     setTimeouc(function () {
       yanhuaChange1();
@@ -146,19 +144,6 @@ window.endShow = function (choose) {
         var btn = new scale_animate(playBtn, 1, 1.1, 1000);
       });
 
-      wb.play_btn.addEventListener("mousedown", function () {
-        var url = window.appleUrl;
-        if (/android/i.test(userAgent)) {
-          url = window.androidUrl;
-        }
-        if (typeof mraid != "undefined") {
-          mraid.openStore(url);
-        } else if (typeof FbPlayableAd != "undefined") {
-          FbPlayableAd.onCTAClick();
-        } else if (typeof ExitApi != "undefined") {
-          ExitApi.exit();
-        }
-      })
     }, 50)
 
   }, chooseTime)

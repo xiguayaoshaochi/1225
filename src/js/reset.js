@@ -39,8 +39,6 @@ window.containerAll2_cs = new createjs.Container();
 window.containerAll2_cs2 = new createjs.Container();
 window.containerAll3 = new createjs.Container();
 window.containerAll_yh = new createjs.Container();
-window.con_red = new createjs.Container();
-window.con_blue = new createjs.Container();
 window.person = new createjs.Container();
 
 
@@ -48,9 +46,8 @@ window.person = new createjs.Container();
 // container4_2.addChild(wb.bg);
 createjs.MotionGuidePlugin.install();
 // stage.enableMouseOver(10);
-window.stage.addChild(containerAll, containerAll_yh, containerAll2, containerAll3);
-containerAll2.addChild(containerAll2_cs, containerAll2_cs2);
-containerAll.addChild(container4_2, con_red, con_blue, container2, container1, container0,  person, container4_1, container5);
+window.stage.addChild(person);
+
 window.stage.alpha = 0;
 containerAll2_cs.alpha = 0;
 containerAll2_cs2.alpha = 0;
